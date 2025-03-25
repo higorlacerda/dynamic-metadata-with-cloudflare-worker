@@ -3,15 +3,15 @@ export const config = {
   patterns: [
       {
 	      pattern: "/empresa/[^/]+",
-	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/companies_metadata?slug=eq.{company_url}",
+	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/companies_metadata?slug=eq.{id}",
       },
       {
 	      pattern: "/evento/[^/]+",
-	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/events_metadata?slug=eq.{slug}",
+	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/events_metadata?slug=eq.{id}",
       },
       {
 	      pattern: "/artigo/[^/]+",
-	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/article_metadata?slug=eq.{slug}",
+	      metaDataEndpoint: "https://api.griiingo.com/rest/v1/article_metadata?slug=eq.{id}",
       }
       // Add more patterns and their metadata endpoints as needed
   ]
